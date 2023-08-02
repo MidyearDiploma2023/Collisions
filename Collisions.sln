@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collisions", "Collisions\Collisions.csproj", "{B95B14A1-198E-48D9-8692-7501E4E13711}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95B14A1-198E-48D9-8692-7501E4E13711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95B14A1-198E-48D9-8692-7501E4E13711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95B14A1-198E-48D9-8692-7501E4E13711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95B14A1-198E-48D9-8692-7501E4E13711}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83DE402A-C04B-4D43-9EC9-BAB0F19FDB40}
+	EndGlobalSection
+EndGlobal
