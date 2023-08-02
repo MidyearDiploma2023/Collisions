@@ -21,6 +21,36 @@ namespace Collisions
                 }
             }
 
+            if (other.Type == Constants.ColliderType.CIRCLE)
+            {
+
+                var circle = other as CircleCollider;
+
+                Vector2 circleCentre = circle.connectedRigidbody.parent.Position;
+
+                Vector2 boxHalfExtents = new Vector2(Scale.X / 2, Scale.Y / 2);
+                Vector2 boxCentre = new Vector2(connectedRigidbody.parent.Position.X + boxHalfExtents.X, connectedRigidbody.parent.Position.Y + boxHalfExtents.Y);
+
+                //Collision Check
+                Vector2 difference = circleCentre - boxCentre;
+                Vector2 clamped = Vector2.Clamp(difference, -boxHalfExtents, boxHalfExtents);
+                Vector2 closest = boxCentre + clamped;
+
+                difference = closest - circleCentre;
+
+                if (difference.LengthSquared() < circle.Radius * circle.Radius)
+                {
+                    OnCollisionEnter("Circle to box called from box collider");
+                    return true;
+                }
+            }
+
+            else if(other.Type == Constants.ColliderType.BOX)
+            {
+
+
+            }
+
             return false;
         }
 

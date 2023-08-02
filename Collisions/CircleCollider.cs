@@ -34,7 +34,7 @@ namespace Collisions
                         overlaps.Add(circle);
                     }
 
-                    OnCollisionEnter();
+                    OnCollisionEnter("Circle to Circle called from circle collider");
                     return true;
                 }
                 //Radius added together
@@ -59,7 +59,7 @@ namespace Collisions
 
                 if(difference.LengthSquared() < Radius * Radius)
                 {
-                    OnCollisionEnter();
+                    OnCollisionEnter("Circle to box called from circle collider");
                     return true;
                 }
             }

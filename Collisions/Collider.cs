@@ -40,9 +40,9 @@ namespace Collisions
             
         }
         
-        public void OnCollisionEnter()
+        public void OnCollisionEnter(string thing)
         {
-            Console.WriteLine("I have hit something");
+            Console.WriteLine(thing);
         }
 
         public void OnCollisionExit()
